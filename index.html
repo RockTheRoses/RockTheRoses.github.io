@@ -1,1 +1,133 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página GitHub.io</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-weight: normal;
+            opacity: 0.8;
+        }
+        
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #24292e;
+            color: white;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 1px solid #e1e4e8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p class="subtitle">Bienvenido a mi página personal en GitHub</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Aquí puedes escribir una breve descripción sobre ti, tus intereses y habilidades. Por ejemplo:</p>
+            <p>Soy un apasionado por el desarrollo web con experiencia en HTML, CSS y JavaScript. Me encanta aprender nuevas tecnologías y compartir mis conocimientos con la comunidad.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto. Qué hace y con qué tecnologías está construido.</p>
+                    <a href="#">Ver en GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto. Qué hace y con qué tecnologías está construido.</p>
+                    <a href="#">Ver en GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto. Qué hace y con qué tecnologías está construido.</p>
+                    <a href="#">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de:</p>
+            <ul>
+                <li>Email: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
+                <li>Twitter: <a href="https://twitter.com/tuusuario">@tuusuario</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/tuperfil">Tu Perfil</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        // Actualiza el año automáticamente
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
